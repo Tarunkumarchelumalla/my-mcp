@@ -17,7 +17,7 @@ export class AiService {
   public tools: Tool[] = [];
 
   private readonly CLAUDE_AI_MODEL: Model = 'claude-3-5-sonnet-20241022';
-  private readonly ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || "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";
+  private readonly ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || ""
 
   constructor() {
     this.llm = new Anthropic({
